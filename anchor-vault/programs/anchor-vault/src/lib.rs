@@ -108,13 +108,13 @@ impl<'info> Payment<'info>{
 
     pub fn withdraw(&mut self , amount: u64) -> Result<()>  {
 
-        let seeds = &[
+        let seed = &[
             b"vault",
             self.vault_state.to_account_info().key.as_ref(),
             &[self.vault_state.vault_bump]
         ];
 
-        let signer_seeds = &[&seeds[..]];
+        let signer_seeds = &[&seed[..]];
         let cpi_context = CpiContext::new_with_signer(self.system_program.to_account_info(), Transfer{
             from:self.vault.to_account_info(),
             to:self.user.to_account_info()
@@ -151,13 +151,13 @@ pub struct Close<'info> {
 impl<'info> Close<'info> {
     pub fn close(&mut self ) -> Result<()> {
 
-        let seeds = &[
+        let seed = &[
             b"vault",
             self.vault_state.to_account_info().key.as_ref(),
             &[self.vault_state.vault_bump]
         ];
 
-        let signer_seeds = &[&seeds[..]];
+        let signer_seeds = &[&seed[..]];
 
         let cpi_context = CpiContext::new_with_signer(self.system_program.to_account_info(), Transfer{
             from:self.vault.to_account_info(),
