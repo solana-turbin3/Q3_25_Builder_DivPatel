@@ -78,7 +78,7 @@ pub struct Payment<'info>{
     pub user:Signer<'info>,
     #[account(
         seeds=[b"state",user.key.as_ref()],
-        bump = vault_state.vault_bump,
+        bump = vault_state.state_bump,
     )]
     pub vault_state: Account<'info , Vault_state>,
     #[account(
