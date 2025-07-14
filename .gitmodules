@@ -4,3 +4,6 @@
 [submodule "anchor-escrow"]
 	path = anchor-escrow
 	url = git@github.com:Dev050x/anchor-escrow.git
+[submodule "anchor-amm"]
+	path = anchor-amm
+	url = git@github.com:Dev050x/anchor-amm.git
