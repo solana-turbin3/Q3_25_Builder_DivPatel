@@ -10,3 +10,6 @@
 [submodule "nft-staking"]
 	path = nft-staking
 	url = git@github.com:Dev050x/NFT_STAKING.git
+[submodule "NFT_STAKING"]
+	path = NFT_STAKING
+	url = git@github.com:Dev050x/NFT_STAKING.git
