@@ -16,3 +16,6 @@
 [submodule "NFT_MARKET_PLACE"]
 	path = NFT_MARKET_PLACE
 	url = git@github.com:Dev050x/NFT_MARKET_PLACE.git
+[submodule "Dice-game"]
+	path = Dice-game
+	url = git@github.com:Dev050x/Dice-game.git
