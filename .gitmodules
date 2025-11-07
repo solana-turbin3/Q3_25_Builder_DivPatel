@@ -19,3 +19,6 @@
 [submodule "Dice-game"]
 	path = Dice-game
 	url = git@github.com:Dev050x/Dice-game.git
+[submodule "Credentia"]
+	path = Credentia
+	url = git@github.com:Dev050x/Credentia.git
